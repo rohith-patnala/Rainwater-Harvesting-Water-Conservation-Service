@@ -1,0 +1,512 @@
+/* =========================================
+   SERVICE DETAILS PAGE
+========================================= */
+
+.service-details-hero,
+.service-overview-section,
+.service-provide-section,
+.service-benefits-section,
+.service-process-section,
+.other-services-section,
+.service-details-cta {
+    width: 100%;
+    padding: 70px 6%;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.service-details-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 35px;
+    background: var(--bg-color);
+}
+
+.service-details-hero-content {
+    max-width: 650px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.section-tag i {
+    width: 18px;
+    height: 18px;
+}
+
+.service-details-hero-content h1 {
+    margin-bottom: 20px;
+    color: var(--heading-color);
+    font-family: "Merriweather", serif;
+    font-size: 34px;
+    line-height: 1.4;
+}
+
+.service-details-hero-content h1 span,
+.service-provide-content h2 span {
+    color: var(--primary-color);
+}
+
+.service-details-hero-content p,
+.section-heading p,
+.service-overview-card p,
+.service-provide-content p,
+.service-benefit-card p,
+.service-process-card p,
+.other-service-card p,
+.service-details-cta-content p {
+    color: var(--text-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.primary-btn i {
+    width: 18px;
+    height: 18px;
+}
+
+.service-details-hero-image img {
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    max-width: 780px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2,
+.service-provide-content h2,
+.service-details-cta-content h2 {
+    margin-bottom: 20px;
+    color: var(--heading-color);
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   SERVICE OVERVIEW
+========================================= */
+
+.service-overview-section {
+    background: var(--section-bg);
+}
+
+.service-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.service-overview-card {
+    padding: 30px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-overview-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.service-overview-card > i {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+.service-overview-card h3,
+.service-benefit-card h3,
+.service-process-card h3,
+.other-service-card h3 {
+    margin-bottom: 10px;
+    color: var(--heading-color);
+    font-family: "Merriweather", serif;
+    font-size: 19px;
+}
+
+
+/* =========================================
+   WHAT WE PROVIDE
+========================================= */
+
+.service-provide-section {
+    background: var(--bg-color);
+}
+
+.service-provide-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.service-provide-image img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.service-provide-content {
+    max-width: 600px;
+}
+
+.service-points {
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.service-points div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.service-points i {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--primary-color);
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.service-benefits-section {
+    background: var(--section-bg);
+}
+
+.service-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.service-benefit-card {
+    padding: 30px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-benefit-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.service-benefit-card > i {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.service-process-section {
+    background: var(--bg-color);
+}
+
+.service-process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.service-process-card {
+    position: relative;
+    padding: 30px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-process-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.service-process-card > span {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.service-process-card > i {
+    width: 42px;
+    height: 42px;
+    margin: 15px auto 18px;
+    color: var(--primary-color);
+}
+
+
+/* =========================================
+   OTHER SERVICES
+========================================= */
+
+.other-services-section {
+    background: var(--section-bg);
+}
+
+.other-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.other-service-card {
+    display: block;
+    padding: 28px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.other-service-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.other-service-card > i {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+.other-service-card span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.other-service-card span i {
+    width: 17px;
+    height: 17px;
+}
+
+
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.service-details-cta {
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.service-details-cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.service-details-cta-content .section-tag,
+.service-details-cta-content h2,
+.service-details-cta-content p {
+    color: #ffffff;
+}
+
+.service-details-cta-content h2 {
+    font-size: 30px;
+}
+
+.service-details-cta-content .primary-btn {
+    background: #ffffff;
+    color: var(--primary-color);
+}
+
+.service-details-cta-content .primary-btn:hover {
+    background: var(--secondary-color);
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+[data-theme="dark"] .service-overview-card,
+[data-theme="dark"] .service-benefit-card,
+[data-theme="dark"] .service-process-card,
+[data-theme="dark"] .other-service-card {
+    box-shadow: none;
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (min-width: 360px) {
+
+    .service-details-hero,
+    .service-overview-section,
+    .service-provide-section,
+    .service-benefits-section,
+    .service-process-section,
+    .other-services-section,
+    .service-details-cta {
+        padding: 65px 5%;
+    }
+
+    .service-details-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .section-heading h2,
+    .service-provide-content h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (min-width: 768px) {
+
+    .service-details-hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        padding: 85px 6%;
+    }
+
+    .service-details-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .service-overview-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-provide-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .service-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .other-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-details-hero-image img {
+        min-height: 350px;
+    }
+
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .service-details-hero,
+    .service-overview-section,
+    .service-provide-section,
+    .service-benefits-section,
+    .service-process-section,
+    .other-services-section,
+    .service-details-cta {
+        padding: 95px 8%;
+    }
+
+    .service-details-hero-content h1 {
+        font-size: 48px;
+    }
+
+    .section-heading h2,
+    .service-provide-content h2 {
+        font-size: 32px;
+    }
+
+    .service-benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

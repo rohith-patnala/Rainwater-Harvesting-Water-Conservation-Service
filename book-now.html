@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now | AquaHarvest</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="book-now.css">
+</head>
+
+<body>
+
+    <!-- Only RTL and Dark Mode Icons -->
+    <div class="top-controls">
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="rtlToggle"
+            aria-label="Toggle RTL layout"
+            title="RTL / LTR"
+        >
+            <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="darkToggle"
+            aria-label="Toggle dark mode"
+            title="Dark Mode"
+        >
+            <i data-lucide="moon"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Main Page -->
+    <main class="book-now-page">
+
+        <!-- Booking Form Card -->
+        <section class="booking-card">
+
+            <!-- Logo and Heading -->
+            <div class="booking-header">
+
+                <a href="index.html" class="booking-logo">
+
+                    <span class="logo-icon">
+                        <i data-lucide="droplets"></i>
+                    </span>
+
+                    <span class="logo-name">
+                        <strong>Aqua</strong><b>Harvest</b>
+                    </span>
+
+                </a>
+
+
+                <span class="booking-label">
+                    Site Assessment Booking
+                </span>
+
+
+                <h1>
+                    Book <span>Now</span>
+                </h1>
+
+
+                <p>
+                    Share the essentials and choose a preferred assessment slot.
+                </p>
+
+            </div>
+
+
+            <!-- Form -->
+            <form class="booking-form" id="bookingForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+
+                <!-- Property Type -->
+                <div class="form-group">
+                    <label for="propertyType">Property Type</label>
+
+                    <select
+                        id="propertyType"
+                        name="propertyType"
+                        required
+                    >
+                        <option value="">Select property type</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Institutional">Institutional</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+
+                <!-- Property Location -->
+                <div class="form-group">
+                    <label for="location">Property Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="City / locality"
+                        required
+                    >
+                </div>
+
+
+                <!-- Required Service -->
+                <div class="form-group">
+                    <label for="service">Required Service</label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
+                        <option value="">Select a service</option>
+
+                        <option value="Rainwater Harvesting">
+                            Rainwater Harvesting
+                        </option>
+
+                        <option value="Recharge Pit Installation">
+                            Recharge Pit Installation
+                        </option>
+
+                        <option value="Water Audit">
+                            Water Audit
+                        </option>
+
+                        <option value="Water Conservation Planning">
+                            Water Conservation Planning
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+                </div>
+
+
+                <!-- Preferred Date -->
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+
+                <!-- Preferred Time -->
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+                </div>
+
+
+                <!-- Property Size -->
+                <div class="form-group">
+                    <label for="propertySize">Property Size</label>
+
+                    <input
+                        type="text"
+                        id="propertySize"
+                        name="propertySize"
+                        placeholder="e.g. 2,500 sq ft"
+                    >
+                </div>
+
+
+                <!-- Current Water Source -->
+                <div class="form-group">
+                    <label for="waterSource">Current Water Source</label>
+
+                    <select
+                        id="waterSource"
+                        name="waterSource"
+                        required
+                    >
+                        <option value="">Select water source</option>
+                        <option value="Municipal Water">
+                            Municipal Water
+                        </option>
+
+                        <option value="Borewell">
+                            Borewell
+                        </option>
+
+                        <option value="Tanker Water">
+                            Tanker Water
+                        </option>
+
+                        <option value="Rainwater">
+                            Rainwater
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+                </div>
+
+
+                <!-- Additional Requirements -->
+                <div class="form-group full-width">
+                    <label for="requirements">
+                        Additional Requirements
+                    </label>
+
+                    <textarea
+                        id="requirements"
+                        name="requirements"
+                        rows="4"
+                        placeholder="Tell us about your water goals or any site-specific requirement."
+                    ></textarea>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="form-actions full-width">
+
+                    <button
+                        type="reset"
+                        class="reset-btn"
+                    >
+                        Reset
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="book-btn"
+                    >
+                        Book Now
+                    </button>
+
+                </div>
+
+
+                <!-- Success Message -->
+                <p
+                    class="form-message full-width"
+                    id="formMessage"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JavaScript -->
+    <script src="book-now.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+/* =========================================
+   ROOT VARIABLES
+========================================= */
+
+:root {
+    --page-bg: #f2f8f5;
+    --card-bg: #ffffff;
+    --text-color: #17324d;
+    --muted-color: #71808c;
+    --border-color: #d5e2dc;
+
+    --primary-color: #008f45;
+    --secondary-color: #0876c9;
+
+    --input-bg: #ffffff;
+    --soft-green: #edf8f1;
+    --shadow-color: rgba(23, 70, 52, 0.08);
+}
+
+
+/* =========================================
+   DARK MODE VARIABLES
+========================================= */
+
+[data-theme="dark"] {
+    --page-bg: #101b18;
+    --card-bg: #182622;
+    --text-color: #f3faf6;
+    --muted-color: #b4c7bd;
+    --border-color: #354b41;
+
+    --primary-color: #39c978;
+    --secondary-color: #55aaf0;
+
+    --input-bg: #1d3029;
+    --soft-green: #203b2d;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--page-bg);
+    color: var(--text-color);
+    font-family: "Nunito Sans", sans-serif;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================
+   TOP RIGHT ICONS
+   OUTSIDE THE FORM
+========================================= */
+
+.top-controls {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+
+    background: var(--card-bg);
+    color: var(--primary-color);
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon-btn:hover {
+    border-color: var(--primary-color);
+    background: var(--soft-green);
+    transform: translateY(-2px);
+}
+
+.icon-btn i {
+    width: 21px;
+    height: 21px;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.book-now-page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 5% 55px;
+}
+
+
+/* =========================================
+   BOOKING CARD
+========================================= */
+
+.booking-card {
+    width: 100%;
+    padding: 32px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+
+    background: var(--card-bg);
+    box-shadow: 0 12px 35px var(--shadow-color);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.booking-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.booking-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.logo-icon i {
+    width: 20px;
+    height: 20px;
+}
+
+.logo-name strong {
+    color: var(--primary-color);
+}
+
+.logo-name b {
+    color: var(--secondary-color);
+}
+
+.booking-label {
+    display: block;
+    margin-bottom: 5px;
+
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.booking-header h1 {
+    margin: 0 0 6px;
+
+    color: var(--primary-color);
+    font-family: "Merriweather", serif;
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.booking-header h1 span {
+    color: var(--primary-color);
+}
+
+.booking-header p {
+    margin: 0;
+
+    color: var(--muted-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 14px;
+}
+
+.form-group {
+    min-width: 0;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-width: 0;
+
+    padding: 12px 13px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    outline: none;
+    background: var(--input-bg);
+    color: var(--text-color);
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted-color);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 143, 69, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 4px;
+}
+
+.reset-btn,
+.book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 82px;
+    padding: 11px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reset-btn {
+    background: var(--secondary-color);
+}
+
+.book-btn {
+    background: var(--primary-color);
+}
+
+.reset-btn:hover,
+.book-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+}
+
+
+/* =========================================
+   FORM MESSAGE
+========================================= */
+
+.form-message {
+    display: none;
+
+    margin: 14px 0 0;
+
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.form-message.show {
+    display: block;
+}
+
+
+/* =========================================
+   RTL SUPPORT
+========================================= */
+
+html[dir="rtl"] .top-controls {
+    right: auto;
+    left: 22px;
+}
+
+html[dir="rtl"] .booking-form {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .booking-header {
+    direction: rtl;
+}
+
+html[dir="rtl"] .icon-btn {
+    direction: ltr;
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (min-width: 360px) {
+
+    .book-now-page {
+        padding: 80px 4% 35px;
+    }
+
+    .booking-card {
+        padding: 24px 18px;
+    }
+
+    .booking-header h1 {
+        font-size: 30px;
+    }
+
+    .booking-logo {
+        font-size: 20px;
+    }
+
+    .top-controls {
+        top: 15px;
+        right: 15px;
+    }
+
+    html[dir="rtl"] .top-controls {
+        right: auto;
+        left: 15px;
+    }
+
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (min-width: 768px) {
+
+    .book-now-page {
+        padding: 85px 5% 45px;
+    }
+
+    .booking-card {
+        padding: 34px;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-header h1 {
+        font-size: 38px;
+    }
+
+    .top-controls {
+        top: 18px;
+        right: 24px;
+    }
+
+    html[dir="rtl"] .top-controls {
+        right: auto;
+        left: 24px;
+    }
+
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .book-now-page {
+        max-width: 1120px;
+        padding: 90px 5% 55px;
+    }
+
+    .booking-card {
+        padding: 38px 42px;
+    }
+
+    .booking-header h1 {
+        font-size: 42px;
+    }
+
+    .top-controls {
+        top: 20px;
+        right: 30px;
+    }
+
+    html[dir="rtl"] .top-controls {
+        right: auto;
+        left: 30px;
+    }
+
+}
