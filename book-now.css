@@ -551,3 +551,25 @@ html[dir="rtl"] .icon-btn {
         font-size: 17px;
     }
 }
+/* =========================================
+   DARK MODE: DATE & TIME PICKER ICONS
+   ========================================= */
+
+html:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="date"],
+html:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="time"],
+body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="date"],
+body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="time"] {
+    color-scheme: dark !important;
+    -webkit-appearance: auto;
+    appearance: auto;
+}
+
+html:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="date"]::-webkit-calendar-picker-indicator,
+html:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="time"]::-webkit-calendar-picker-indicator,
+body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="date"]::-webkit-calendar-picker-indicator,
+body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 1 !important;
+    filter: brightness(0) invert(1) !important;
+    -webkit-filter: brightness(0) invert(1) !important;
+    cursor: pointer;
+}

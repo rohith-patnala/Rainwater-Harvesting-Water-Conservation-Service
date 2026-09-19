@@ -829,3 +829,65 @@
 
     z-index: -1;
 }
+
+/* =========================================
+   FINAL BUTTON STYLE OVERRIDE
+   Match Book Site Assessment
+========================================= */
+
+.case-hero-section .case-hero-content .primary-btn,
+.case-cta-content .primary-btn,
+.case-project-content .case-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 9px !important;
+
+    min-height: 48px !important;
+    padding: 0 21px !important;
+
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 8px !important;
+
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+
+    transition: var(--transition) !important;
+}
+
+.case-hero-section .case-hero-content .primary-btn:hover,
+.case-hero-section .case-hero-content .primary-btn:focus-visible,
+.case-cta-content .primary-btn:hover,
+.case-cta-content .primary-btn:focus-visible,
+.case-project-content .case-link:hover,
+.case-project-content .case-link:focus-visible {
+    background: var(--secondary-color) !important;
+    color: #ffffff !important;
+    border-color: var(--secondary-color) !important;
+    transform: translateY(-3px) !important;
+}
+
+.case-hero-section .case-hero-content .primary-btn svg,
+.case-hero-section .case-hero-content .primary-btn i,
+.case-cta-content .primary-btn svg,
+.case-cta-content .primary-btn i,
+.case-project-content .case-link svg,
+.case-project-content .case-link i {
+    width: 18px !important;
+    height: 18px !important;
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.case-project-content .case-link {
+    margin-top: 22px !important;
+}
+
+/* =========================================
+   END FINAL BUTTON STYLE OVERRIDE
+========================================= */

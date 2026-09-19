@@ -55,6 +55,49 @@ center / cover no-repeat;
   font-size: 1.05rem;
 }
 
+.about-hero-button {
+  margin-top: 24px;
+}
+
+.about-hero-button,
+.about-cta-container .cta-light-button,
+.about-intro-content .primary-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 21px;
+  color: var(--white-color) !important;
+  background: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: var(--medium-radius);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.about-hero-button:hover,
+.about-hero-button:focus-visible,
+.about-cta-container .cta-light-button:hover,
+.about-cta-container .cta-light-button:focus-visible,
+.about-intro-content .primary-button:hover,
+.about-intro-content .primary-button:focus-visible {
+  color: var(--white-color) !important;
+  background: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  transform: translateY(-3px);
+}
+
+.about-hero-button svg,
+.about-cta-container .cta-light-button svg,
+.about-intro-content .primary-button svg {
+  width: 18px;
+  height: 18px;
+}
+
 
 /* =========================================
    ABOUT INTRO
@@ -881,21 +924,91 @@ body.dark-mode .about-hero-section {
 
 
 /* =========================================
-   RTL FIX
+   RTL TIMELINE
 ========================================= */
 
-[dir="rtl"] .about-timeline,
-[dir="rtl"] .timeline-item {
+/*
+   Keep the timeline's grid geometry stable, but swap the
+   content cards and year labels from left <-> right when
+   RTL is active. These rules are direction-independent of
+   dark/light mode.
+*/
+html[dir="rtl"] .about-timeline,
+html[dir="rtl"] .timeline-item {
     direction: ltr !important;
 }
 
-[dir="rtl"] .timeline-content {
+html[dir="rtl"] .timeline-content {
     direction: rtl !important;
     text-align: right !important;
 }
 
-[dir="rtl"] .timeline-item:nth-child(even) .timeline-content {
-    text-align: right !important;
+/* Desktop / tablet: swap each timeline row horizontally */
+@media (min-width: 768px) {
+    html[dir="rtl"] .timeline-item .timeline-year {
+        grid-column: 3 !important;
+        grid-row: 1 !important;
+        text-align: left !important;
+    }
+
+    html[dir="rtl"] .timeline-item .timeline-content {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-year {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-content {
+        grid-column: 3 !important;
+        grid-row: 1 !important;
+        text-align: right !important;
+    }
+}
+
+/* Mobile: move the timeline line, dot and card to the right */
+@media (max-width: 767px) {
+    html[dir="rtl"] .about-timeline {
+        direction: ltr !important;
+    }
+
+    html[dir="rtl"] .about-timeline::before {
+        left: auto !important;
+        right: 21px !important;
+        transform: none !important;
+    }
+
+    html[dir="rtl"] .timeline-item,
+    html[dir="rtl"] .timeline-item:nth-child(even) {
+        grid-template-columns: minmax(0, 1fr) 42px !important;
+        column-gap: 15px !important;
+    }
+
+    html[dir="rtl"] .timeline-dot,
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+        grid-column: 2 !important;
+        grid-row: 1 / span 2 !important;
+    }
+
+    html[dir="rtl"] .timeline-year,
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-year {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        text-align: right !important;
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .timeline-content,
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-content {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        text-align: right !important;
+        direction: rtl !important;
+    }
 }
 
 

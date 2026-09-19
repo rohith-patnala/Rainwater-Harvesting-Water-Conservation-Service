@@ -79,15 +79,34 @@ a {
 ================================ */
 
 .btn {
+  min-height: 48px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-height: 48px;
-  padding: 13px 22px;
+  gap: 9px;
+
+  padding: 0 21px;
+
+  color: var(--white-color);
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
   font-weight: 800;
+  text-decoration: none;
+
   transition: var(--transition);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
 }
 
 .btn svg {
@@ -95,34 +114,23 @@ a {
   height: 18px;
 }
 
-.btn-primary {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-
-.btn-primary:hover {
-  background: var(--secondary-color);
-  transform: translateY(-3px);
-}
-
-.btn-outline {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.btn-outline:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-
+.btn-primary,
+.btn-outline,
 .btn-light {
-  background: var(--white-color);
-  color: var(--primary-color);
+  color: var(--white-color);
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
-.btn-light:hover {
-  background: var(--secondary-color);
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-outline:hover,
+.btn-outline:focus-visible,
+.btn-light:hover,
+.btn-light:focus-visible {
   color: var(--white-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 /* ================================
@@ -956,4 +964,69 @@ html[dir="rtl"] .eco-card {
   .benefits-visual img {
     height: 400px;
   }
+}
+/* =================================
+   FINAL BUTTON CONSISTENCY OVERRIDES
+   Match Book Site Assessment
+================================= */
+
+.btn,
+.text-link,
+.premium-service-card a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 21px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  color: var(--white-color);
+  background: var(--primary-color);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn:hover,
+.btn:focus-visible,
+.text-link:hover,
+.text-link:focus-visible,
+.premium-service-card a:hover,
+.premium-service-card a:focus-visible {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.btn svg,
+.text-link svg,
+.premium-service-card a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-light,
+.premium-hero .btn-outline {
+  color: var(--white-color);
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-outline:hover,
+.btn-outline:focus-visible,
+.btn-light:hover,
+.btn-light:focus-visible,
+.premium-hero .btn-outline:hover,
+.premium-hero .btn-outline:focus-visible {
+  color: var(--white-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
 }

@@ -868,3 +868,116 @@ body.dark-mode .faq-item {
   box-shadow: 0 10px 25px rgba(0, 128, 70, 0.10);
   transform: translateY(-5px);
 }
+
+/* =========================================
+   SHARED PAGE BUTTONS
+   Same as Book Site Assessment
+========================================= */
+
+.page-button {
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 0 21px;
+
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--medium-radius, 8px);
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+
+    transition: var(--transition, 0.3s ease);
+}
+
+.page-button svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.page-button:hover,
+.page-button:focus-visible {
+    color: var(--white-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.page-button:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+/* Hero button centered below paragraph */
+.services-hero-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+/* Keep service-card actions compact while using the same colors */
+.service-card .page-button {
+    min-height: 44px;
+    padding: 0 18px;
+}
+
+/* CTA button uses the same green -> blue treatment */
+.services-cta-container .page-button {
+    flex-shrink: 0;
+}
+
+/* Mobile hero */
+@media (max-width: 360px) {
+    .services-hero-button {
+        margin-top: 20px;
+    }
+
+    .services-hero-button .page-button {
+        width: 100%;
+        max-width: 230px;
+    }
+}
+
+/* =========================================
+   SERVICE CARD BUTTON TEXT
+========================================= */
+
+.service-card .text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  color: #ffffff !important;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.service-card .text-link:hover,
+.service-card .text-link:focus-visible {
+  color: #ffffff !important;
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.service-card .text-link svg {
+  width: 18px;
+  height: 18px;
+  color: #ffffff !important;
+  stroke: currentColor;
+}

@@ -794,3 +794,190 @@
     width: 18px;
     height: 18px;
 }
+
+/* =========================================
+   SITE ASSESSMENT - ADDITIONAL CONTENT
+========================================= */
+
+.assessment-details {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+.assessment-details h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 20px;
+    color: var(--heading-color);
+    font-family: "Merriweather", serif;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.assessment-details h3 i {
+    width: 22px;
+    height: 22px;
+    color: #007f39;
+}
+
+.assessment-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 18px;
+}
+
+.assessment-detail-item > i {
+    flex-shrink: 0;
+    width: 21px;
+    height: 21px;
+    margin-top: 2px;
+    color: #007f39;
+}
+
+.assessment-detail-item strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--heading-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.assessment-detail-item p {
+    margin: 0;
+    color: var(--text-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.assessment-ready-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 25px;
+    padding: 18px;
+    border: 1px solid rgba(0, 127, 57, 0.22);
+    border-radius: 12px;
+    background: rgba(0, 127, 57, 0.06);
+}
+
+.assessment-ready-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #007f39;
+    color: #ffffff;
+}
+
+.assessment-ready-icon i {
+    width: 19px;
+    height: 19px;
+}
+
+.assessment-ready-box h4 {
+    margin: 0 0 5px;
+    color: var(--heading-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.assessment-ready-box p {
+    margin: 0;
+    color: var(--text-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .assessment-ready-box {
+    background: rgba(0, 127, 57, 0.12);
+    border-color: rgba(0, 127, 57, 0.35);
+}
+
+@media (max-width: 767px) {
+    .assessment-details {
+        margin-top: 25px;
+        padding-top: 22px;
+    }
+
+    .assessment-detail-item {
+        margin-bottom: 16px;
+    }
+
+    .assessment-ready-box {
+        padding: 16px;
+    }
+}
+
+
+/* =========================================
+   CONTACT PAGE BUTTON COLOR
+   MATCHES THE PROVIDED BOOK NOW IMAGE
+========================================= */
+
+.contact-hero-section a.primary-btn,
+.contact-form-section button.primary-btn,
+.contact-form-section button.form-submit-btn,
+.contact-location-section a.map-btn,
+.contact-cta-section a.primary-btn,
+.contact-page .btn,
+.contact-page button,
+.contact-page a.btn,
+.contact-page a.primary-btn,
+.contact-page a.secondary-btn {
+    background: #007f39 !important;
+    background-color: #007f39 !important;
+    color: #ffffff !important;
+    border-color: #007f39 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-hero-section a.primary-btn:hover,
+.contact-form-section button.primary-btn:hover,
+.contact-form-section button.form-submit-btn:hover,
+.contact-location-section a.map-btn:hover,
+.contact-cta-section a.primary-btn:hover,
+.contact-page .btn:hover,
+.contact-page button:hover,
+.contact-page a.btn:hover,
+.contact-page a.primary-btn:hover,
+.contact-page a.secondary-btn:hover {
+    background: #0066cc !important;
+    background-color: #0066cc !important;
+    color: #ffffff !important;
+    border-color: #0066cc !important;
+    transform: translateY(-3px);
+}
+
+.contact-hero-section a.primary-btn i,
+.contact-hero-section a.primary-btn svg,
+.contact-form-section button.primary-btn i,
+.contact-form-section button.primary-btn svg,
+.contact-form-section button.form-submit-btn i,
+.contact-form-section button.form-submit-btn svg,
+.contact-location-section a.map-btn i,
+.contact-location-section a.map-btn svg,
+.contact-cta-section a.primary-btn i,
+.contact-cta-section a.primary-btn svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* =========================================
+   SITE ASSESSMENT FORM - GREEN BORDER
+========================================= */
+
+.contact-form-section .contact-form {
+    border: 2px solid #007f39 !important;
+    border-color: #007f39 !important;
+}
