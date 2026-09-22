@@ -928,7 +928,7 @@
 .contact-form-section button.primary-btn,
 .contact-form-section button.form-submit-btn,
 .contact-location-section a.map-btn,
-.contact-cta-section a.primary-btn,
+.contact-cta-section a
 .contact-page .btn,
 .contact-page button,
 .contact-page a.btn,
@@ -938,6 +938,15 @@
     background-color: #007f39 !important;
     color: #ffffff !important;
     border-color: #007f39 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn{
+    background: #007f39 !important;
+    background-color: #ffffff !important;
+    color: #007f39 !important;
+    border-color: #ffffff !important;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -968,10 +977,15 @@
 .contact-location-section a.map-btn i,
 .contact-location-section a.map-btn svg,
 .contact-cta-section a.primary-btn i,
-.contact-cta-section a.primary-btn svg {
-    color: #ffffff !important;
+.contact-cta-section a {
+    color: #007f39 !important;
     stroke: #ffffff !important;
 }
+
+.primary-btn svg{
+    color: #007f39 !important;
+}
+
 
 /* =========================================
    SITE ASSESSMENT FORM - GREEN BORDER
@@ -980,4 +994,12 @@
 .contact-form-section .contact-form {
     border: 2px solid #007f39 !important;
     border-color: #007f39 !important;
+}
+
+
+
+
+.form-head{
+    text-align: center;
+    color: #007f39
 }
