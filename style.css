@@ -2211,3 +2211,77 @@ body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .footer-social-link
 
 
 
+
+/* =========================================
+   NAV LINK UNDERLINE POSITION FIX
+   ========================================= */
+
+.main-navigation .nav-link::after {
+    bottom: 5px;
+}
+
+.main-navigation .nav-link:hover::after,
+.main-navigation .nav-link.active::after {
+    bottom: 5px;
+}
+
+
+
+
+
+/* =========================================
+   HEADER DROPDOWN - WHITE BACKGROUND
+========================================= */
+
+.main-navigation .dropdown-menu {
+    background: #ffffff !important;
+}
+
+.main-navigation .dropdown-menu .dropdown-link {
+    color: #333333;
+}
+
+.main-navigation .dropdown-menu .dropdown-link:hover {
+    background: var(--soft-green);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   HOME DROPDOWN POSITION & SIZE
+========================================= */
+
+.main-navigation .nav-dropdown .dropdown-menu {
+    /* Move dropdown slightly left */
+    left: -30px;
+
+    /* Keep it directly below Home */
+    top: calc(100% + 14px);
+
+    /* Decrease width */
+    min-width: 125px;
+    width: 125px;
+
+    /* Keep white background */
+    background: #ffffff !important;
+}
+
+
+/* Center Home 1 and Home 2 */
+.main-navigation .nav-dropdown .dropdown-link {
+    text-align: center;
+    padding: 10px 8px;
+}
+
+
+/* RTL position */
+html[dir="rtl"] .main-navigation .nav-dropdown .dropdown-menu {
+    right: -18px;
+    left: auto;
+}

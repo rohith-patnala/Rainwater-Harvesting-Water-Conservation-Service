@@ -573,3 +573,16 @@ body:is(.dark-mode, .dark, .dark-theme, [data-theme="dark"]) .form-group input[t
     -webkit-filter: brightness(0) invert(1) !important;
     cursor: pointer;
 }
+
+
+
+
+/* =========================================
+   RTL / LTR BUTTON
+   ========================================= */
+
+.rtl-btn {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}

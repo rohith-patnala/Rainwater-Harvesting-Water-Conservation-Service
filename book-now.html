@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Book Now | AquaHarvest</title>
-
+<link rel="icon" type="image/png" href="aquaharvest-logo.png" sizes="32x32">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +25,18 @@
     <!-- Only RTL and Dark Mode Icons -->
     <div class="top-controls">
 
+        <!-- RTL / LTR BUTTON -->
         <button
             type="button"
-            class="icon-btn"
+            class="icon-btn rtl-btn"
             id="rtlToggle"
-            aria-label="Toggle RTL layout"
-            title="RTL / LTR"
+            aria-label="Switch to RTL"
+            title="RTL"
         >
-            <i data-lucide="arrow-left-right"></i>
+            RTL
         </button>
 
+        <!-- DARK MODE BUTTON -->
         <button
             type="button"
             class="icon-btn"
@@ -56,39 +58,54 @@
 
             <!-- Logo and Heading -->
             <div class="booking-header">
-                <a href="index.html" class="booking-brand" aria-label="AquaHarvest Home">
-                    <!-- <img
+
+                <a
+                    href="index.html"
+                    class="booking-brand"
+                    aria-label="AquaHarvest Home"
+                >
+
+                    <!--
+                    <img
                         src="./aquaharvest-icon-only.png"
                         alt="AquaHarvest logo"
                         class="booking-brand-icon"
                         loading="eager"
                         decoding="async"
-                    > -->
-                     <img
-                src="./aquaharvest-logo.png"
-                alt="AquaHarvest logo"
-                class="brand-logo-image"
-                width="48"
-                height="48"
-                loading="eager"
-                decoding="async"
-            >
+                    >
+                    -->
+
+                    <img
+                        src="./aquaharvest-logo.png"
+                        alt="AquaHarvest logo"
+                        class="brand-logo-image"
+                        width="48"
+                        height="48"
+                        loading="eager"
+                        decoding="async"
+                    >
+
                     <span class="booking-brand-name">
                         <span class="brand-aqua">Aqua</span><span class="brand-harvest">Harvest</span>
                     </span>
+
                 </a>
+
 
                 <span class="booking-label">
                     Site Assessment Booking
                 </span>
 
+
                 <h1>
                     Book <span>Now</span>
                 </h1>
 
+
                 <p>
                     Share the essentials and choose a preferred assessment slot.
                 </p>
+
             </div>
 
 
@@ -97,7 +114,10 @@
 
                 <!-- Full Name -->
                 <div class="form-group">
-                    <label for="fullName">Full Name</label>
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
 
                     <input
                         type="text"
@@ -106,12 +126,16 @@
                         placeholder="Enter your full name"
                         required
                     >
+
                 </div>
 
 
                 <!-- Email -->
                 <div class="form-group">
-                    <label for="email">Email Address</label>
+
+                    <label for="email">
+                        Email Address
+                    </label>
 
                     <input
                         type="email"
@@ -120,12 +144,16 @@
                         placeholder="you@example.com"
                         required
                     >
+
                 </div>
 
 
                 <!-- Phone -->
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
 
                     <input
                         type="tel"
@@ -134,31 +162,58 @@
                         placeholder="Enter your phone number"
                         required
                     >
+
                 </div>
 
 
                 <!-- Property Type -->
                 <div class="form-group">
-                    <label for="propertyType">Property Type</label>
+
+                    <label for="propertyType">
+                        Property Type
+                    </label>
 
                     <select
                         id="propertyType"
                         name="propertyType"
                         required
                     >
-                        <option value="">Select property type</option>
-                        <option value="Residential">Residential</option>
-                        <option value="Commercial">Commercial</option>
-                        <option value="Industrial">Industrial</option>
-                        <option value="Institutional">Institutional</option>
-                        <option value="Other">Other</option>
+
+                        <option value="">
+                            Select property type
+                        </option>
+
+                        <option value="Residential">
+                            Residential
+                        </option>
+
+                        <option value="Commercial">
+                            Commercial
+                        </option>
+
+                        <option value="Industrial">
+                            Industrial
+                        </option>
+
+                        <option value="Institutional">
+                            Institutional
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
                     </select>
+
                 </div>
 
 
                 <!-- Property Location -->
                 <div class="form-group">
-                    <label for="location">Property Location</label>
+
+                    <label for="location">
+                        Property Location
+                    </label>
 
                     <input
                         type="text"
@@ -167,19 +222,26 @@
                         placeholder="City / locality"
                         required
                     >
+
                 </div>
 
 
                 <!-- Required Service -->
                 <div class="form-group">
-                    <label for="service">Required Service</label>
+
+                    <label for="service">
+                        Required Service
+                    </label>
 
                     <select
                         id="service"
                         name="service"
                         required
                     >
-                        <option value="">Select a service</option>
+
+                        <option value="">
+                            Select a service
+                        </option>
 
                         <option value="Rainwater Harvesting">
                             Rainwater Harvesting
@@ -200,13 +262,18 @@
                         <option value="Other">
                             Other
                         </option>
+
                     </select>
+
                 </div>
 
 
                 <!-- Preferred Date -->
                 <div class="form-group">
-                    <label for="date">Preferred Date</label>
+
+                    <label for="date">
+                        Preferred Date
+                    </label>
 
                     <input
                         type="date"
@@ -214,12 +281,16 @@
                         name="date"
                         required
                     >
+
                 </div>
 
 
                 <!-- Preferred Time -->
                 <div class="form-group">
-                    <label for="time">Preferred Time</label>
+
+                    <label for="time">
+                        Preferred Time
+                    </label>
 
                     <input
                         type="time"
@@ -227,12 +298,16 @@
                         name="time"
                         required
                     >
+
                 </div>
 
 
                 <!-- Property Size -->
                 <div class="form-group">
-                    <label for="propertySize">Property Size</label>
+
+                    <label for="propertySize">
+                        Property Size
+                    </label>
 
                     <input
                         type="text"
@@ -240,19 +315,27 @@
                         name="propertySize"
                         placeholder="e.g. 2,500 sq ft"
                     >
+
                 </div>
 
 
                 <!-- Current Water Source -->
                 <div class="form-group">
-                    <label for="waterSource">Current Water Source</label>
+
+                    <label for="waterSource">
+                        Current Water Source
+                    </label>
 
                     <select
                         id="waterSource"
                         name="waterSource"
                         required
                     >
-                        <option value="">Select water source</option>
+
+                        <option value="">
+                            Select water source
+                        </option>
+
                         <option value="Municipal Water">
                             Municipal Water
                         </option>
@@ -272,12 +355,15 @@
                         <option value="Other">
                             Other
                         </option>
+
                     </select>
+
                 </div>
 
 
                 <!-- Additional Requirements -->
                 <div class="form-group full-width">
+
                     <label for="requirements">
                         Additional Requirements
                     </label>
@@ -288,6 +374,7 @@
                         rows="4"
                         placeholder="Tell us about your water goals or any site-specific requirement."
                     ></textarea>
+
                 </div>
 
 
@@ -332,4 +419,5 @@
     <script src="book-now.js"></script>
 
 </body>
+
 </html>

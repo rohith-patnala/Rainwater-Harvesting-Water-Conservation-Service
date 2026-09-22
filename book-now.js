@@ -17,89 +17,324 @@ if (window.lucide) {
 
 
 // =========================================
-// DARK MODE TOGGLE
+// DARK MODE
+// SAVED ACROSS ALL PAGES
 // =========================================
 
-darkToggle.addEventListener("click", function () {
+function applySavedTheme() {
 
-    const isDark =
-        htmlElement.getAttribute("data-theme") === "dark";
+    const savedTheme =
+        localStorage.getItem("theme");
 
-    if (isDark) {
 
-        htmlElement.removeAttribute("data-theme");
+    if (savedTheme === "dark") {
 
-        darkToggle.innerHTML =
-            '<i data-lucide="moon"></i>';
+        // Apply dark mode
+        htmlElement.setAttribute(
+            "data-theme",
+            "dark"
+        );
+
+        // Show sun icon
+        if (darkToggle) {
+            darkToggle.innerHTML =
+                '<i data-lucide="sun"></i>';
+        }
 
     } else {
 
-        htmlElement.setAttribute("data-theme", "dark");
+        // Apply light mode
+        htmlElement.removeAttribute(
+            "data-theme"
+        );
 
-        darkToggle.innerHTML =
-            '<i data-lucide="sun"></i>';
+        // Show moon icon
+        if (darkToggle) {
+            darkToggle.innerHTML =
+                '<i data-lucide="moon"></i>';
+        }
     }
 
-    lucide.createIcons();
 
-});
+    // Reload Lucide icons
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+}
+
+
+// =========================================
+// APPLY SAVED THEME ON PAGE LOAD
+// =========================================
+
+applySavedTheme();
+
+
+// =========================================
+// DARK MODE TOGGLE
+// =========================================
+
+if (darkToggle) {
+
+    darkToggle.addEventListener(
+        "click",
+        function () {
+
+            const isDark =
+                htmlElement.getAttribute(
+                    "data-theme"
+                ) === "dark";
+
+
+            if (isDark) {
+
+                // =================================
+                // DARK → LIGHT
+                // =================================
+
+                htmlElement.removeAttribute(
+                    "data-theme"
+                );
+
+                // Save light mode
+                localStorage.setItem(
+                    "theme",
+                    "light"
+                );
+
+                // Change icon to moon
+                darkToggle.innerHTML =
+                    '<i data-lucide="moon"></i>';
+
+            } else {
+
+                // =================================
+                // LIGHT → DARK
+                // =================================
+
+                htmlElement.setAttribute(
+                    "data-theme",
+                    "dark"
+                );
+
+                // Save dark mode
+                localStorage.setItem(
+                    "theme",
+                    "dark"
+                );
+
+                // Change icon to sun
+                darkToggle.innerHTML =
+                    '<i data-lucide="sun"></i>';
+            }
+
+
+            // Reload Lucide icons
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+        }
+    );
+
+}
 
 
 // =========================================
 // RTL / LTR TOGGLE
 // =========================================
 
-rtlToggle.addEventListener("click", function () {
+if (rtlToggle) {
 
-    const isRTL =
-        htmlElement.getAttribute("dir") === "rtl";
+    rtlToggle.addEventListener(
+        "click",
+        function () {
 
-    if (isRTL) {
+            const isRTL =
+                htmlElement.getAttribute("dir") === "rtl";
 
-        htmlElement.setAttribute("dir", "ltr");
 
-        rtlToggle.innerHTML =
-            '<i data-lucide="arrow-left-right"></i>';
+            if (isRTL) {
+
+                // =================================
+                // RTL → LTR
+                // =================================
+
+                htmlElement.setAttribute(
+                    "dir",
+                    "ltr"
+                );
+
+                rtlToggle.textContent = "RTL";
+
+                rtlToggle.setAttribute(
+                    "aria-label",
+                    "Switch to RTL"
+                );
+
+                rtlToggle.setAttribute(
+                    "title",
+                    "RTL"
+                );
+
+
+                // Save direction
+                localStorage.setItem(
+                    "direction",
+                    "ltr"
+                );
+
+            } else {
+
+                // =================================
+                // LTR → RTL
+                // =================================
+
+                htmlElement.setAttribute(
+                    "dir",
+                    "rtl"
+                );
+
+                rtlToggle.textContent = "LTR";
+
+                rtlToggle.setAttribute(
+                    "aria-label",
+                    "Switch to LTR"
+                );
+
+                rtlToggle.setAttribute(
+                    "title",
+                    "LTR"
+                );
+
+
+                // Save direction
+                localStorage.setItem(
+                    "direction",
+                    "rtl"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+// =========================================
+// APPLY SAVED RTL / LTR DIRECTION
+// =========================================
+
+function applySavedDirection() {
+
+    const savedDirection =
+        localStorage.getItem("direction");
+
+
+    if (savedDirection === "rtl") {
+
+        // Apply RTL
+        htmlElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+        if (rtlToggle) {
+
+            rtlToggle.textContent = "LTR";
+
+            rtlToggle.setAttribute(
+                "aria-label",
+                "Switch to LTR"
+            );
+
+            rtlToggle.setAttribute(
+                "title",
+                "LTR"
+            );
+        }
 
     } else {
 
-        htmlElement.setAttribute("dir", "rtl");
+        // Apply LTR
+        htmlElement.setAttribute(
+            "dir",
+            "ltr"
+        );
 
-        rtlToggle.innerHTML =
-            '<i data-lucide="arrow-left-right"></i>';
+        if (rtlToggle) {
+
+            rtlToggle.textContent = "RTL";
+
+            rtlToggle.setAttribute(
+                "aria-label",
+                "Switch to RTL"
+            );
+
+            rtlToggle.setAttribute(
+                "title",
+                "RTL"
+            );
+        }
     }
+}
 
-    lucide.createIcons();
 
-});
+// =========================================
+// APPLY SAVED DIRECTION ON PAGE LOAD
+// =========================================
+
+applySavedDirection();
 
 
 // =========================================
 // BOOKING FORM SUBMIT
 // =========================================
 
-bookingForm.addEventListener("submit", function (event) {
+if (bookingForm) {
 
-    event.preventDefault();
+    bookingForm.addEventListener(
+        "submit",
+        function (event) {
 
-    formMessage.textContent =
-        "Thank you! Your booking request has been submitted successfully.";
+            event.preventDefault();
 
-    formMessage.classList.add("show");
 
-    bookingForm.reset();
+            formMessage.textContent =
+                "Thank you! Your booking request has been submitted successfully.";
 
-});
+
+            formMessage.classList.add(
+                "show"
+            );
+
+
+            bookingForm.reset();
+
+        }
+    );
+
+}
 
 
 // =========================================
 // RESET MESSAGE
 // =========================================
 
-bookingForm.addEventListener("reset", function () {
+if (bookingForm) {
 
-    formMessage.textContent = "";
+    bookingForm.addEventListener(
+        "reset",
+        function () {
 
-    formMessage.classList.remove("show");
+            formMessage.textContent = "";
 
-});
+            formMessage.classList.remove(
+                "show"
+            );
+
+        }
+    );
+
+}
