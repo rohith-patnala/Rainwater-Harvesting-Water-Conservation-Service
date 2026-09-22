@@ -2,7 +2,7 @@
    SERVICE DETAILS PAGE
 ========================================= */
 
-.service-details-hero,
+
 .service-overview-section,
 .service-provide-section,
 .service-benefits-section,
@@ -13,7 +13,9 @@
     padding: 70px 6%;
 }
 
-
+.service-details-hero{
+    margin-top: 80px;
+}
 /* =========================================
    HERO SECTION
 ========================================= */
