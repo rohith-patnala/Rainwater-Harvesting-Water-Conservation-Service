@@ -2285,3 +2285,47 @@ html[dir="rtl"] .main-navigation .nav-dropdown .dropdown-menu {
     right: -18px;
     left: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   HERO - EXPLORE SERVICES BUTTON
+========================================= */
+
+.hero-buttons .secondary-button {
+    background: transparent;
+    color: #0066cc;
+    border: 1px solid #0066cc;
+}
+
+.hero-buttons .secondary-button:hover {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
+}
+
+
+/* =========================================
+   FINAL CTA - BOOK SITE ASSESSMENT BUTTON
+========================================= */
+
+.final-cta-container .cta-light-button {
+    background: #ffffff;
+    color: #2e7d32;
+    border: 1px solid #ffffff;
+}
+
+.final-cta-container .cta-light-button:hover {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
+}

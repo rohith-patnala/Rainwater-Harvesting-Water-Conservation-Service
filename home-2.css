@@ -1030,3 +1030,48 @@ html[dir="rtl"] .eco-card {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   HOME 2 - HERO EXPLORE SERVICES BUTTON
+========================================= */
+
+.premium-hero .btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #0066cc;
+}
+
+.premium-hero .btn-outline:hover,
+.premium-hero .btn-outline:focus-visible {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
+}
+
+
+/* =========================================
+   HOME 2 - CTA BOOK SITE ASSESSMENT BUTTON
+========================================= */
+
+.cta-box .btn-light {
+    background: #ffffff;
+    color: #2e7d32;
+    border: 1px solid #ffffff;
+}
+
+.cta-box .btn-light:hover,
+.cta-box .btn-light:focus-visible {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
+}

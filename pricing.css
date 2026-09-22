@@ -686,9 +686,9 @@
 ===================================================== */
 
 .pricing-cta-content .primary-btn {
-    background: #007f39;
-    color: #ffffff;
-    border: 1px solid #007f39;
+    background: #ffffff;
+    color: #007f39;
+    border: 1px solid #ffffff;
 }
 
 .pricing-cta-content .primary-btn:hover {
@@ -1033,4 +1033,23 @@ header button,
     position: static;
     transform: none;
     vertical-align: middle;
+}
+
+/* =====================================================
+   NORMAL PLAN & SPECIAL PLAN BUTTONS
+   TRANSPARENT + GREEN BORDER + GREEN TEXT
+===================================================== */
+
+.pricing-card:nth-child(1) .secondary-btn,
+.pricing-card:nth-child(3) .secondary-btn {
+    background: transparent;
+    color: #007f39;
+    border: 1px solid #007f39;
+}
+
+.pricing-card:nth-child(1) .secondary-btn:hover,
+.pricing-card:nth-child(3) .secondary-btn:hover {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
 }

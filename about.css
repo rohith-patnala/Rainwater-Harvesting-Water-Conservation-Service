@@ -1069,3 +1069,27 @@ html[dir="rtl"] .timeline-content {
         direction: rtl !important;
     }
 }
+
+
+
+
+
+
+
+
+/* =========================================
+   ABOUT PAGE - CTA BUTTON
+========================================= */
+
+.about-cta-container .cta-light-button {
+    background: #ffffff !important;
+    color: #2e7d32 !important;
+    border: 1px solid #ffffff !important;
+}
+
+.about-cta-container .cta-light-button:hover,
+.about-cta-container .cta-light-button:focus-visible {
+    background: #0066cc !important;
+    color: #ffffff !important;
+    border-color: #0066cc !important;
+}

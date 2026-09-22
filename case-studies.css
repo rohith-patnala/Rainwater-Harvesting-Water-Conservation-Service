@@ -891,3 +891,44 @@
 /* =========================================
    END FINAL BUTTON STYLE OVERRIDE
 ========================================= */
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CTA - BOOK SITE ASSESSMENT BUTTON
+========================================= */
+
+.case-cta-content .primary-btn {
+    background: #ffffff !important;
+    color: #2e7d32 !important;
+    border: 1px solid #ffffff !important;
+}
+
+.case-cta-content .primary-btn svg,
+.case-cta-content .primary-btn i {
+    color: #2e7d32 !important;
+    stroke: #2e7d32 !important;
+}
+
+/* Hover */
+.case-cta-content .primary-btn:hover,
+.case-cta-content .primary-btn:focus-visible {
+    background: #0066cc !important;
+    color: #ffffff !important;
+    border-color: #0066cc !important;
+}
+
+.case-cta-content .primary-btn:hover svg,
+.case-cta-content .primary-btn:hover i,
+.case-cta-content .primary-btn:focus-visible svg,
+.case-cta-content .primary-btn:focus-visible i {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}

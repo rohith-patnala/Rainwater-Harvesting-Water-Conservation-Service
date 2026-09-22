@@ -981,3 +981,39 @@ body.dark-mode .faq-item {
   color: #ffffff !important;
   stroke: currentColor;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CTA - BOOK SITE ASSESSMENT BUTTON
+========================================= */
+
+.services-cta-container .cta-light-button {
+    background: #ffffff !important;
+    color: #2e7d32 !important;
+    border: 1px solid #ffffff !important;
+}
+
+.services-cta-container .cta-light-button svg {
+    color: #2e7d32 !important;
+}
+
+.services-cta-container .cta-light-button:hover,
+.services-cta-container .cta-light-button:focus-visible {
+    background: #0066cc !important;
+    color: #ffffff !important;
+    border-color: #0066cc !important;
+}
+
+.services-cta-container .cta-light-button:hover svg,
+.services-cta-container .cta-light-button:focus-visible svg {
+    color: #ffffff !important;
+}
