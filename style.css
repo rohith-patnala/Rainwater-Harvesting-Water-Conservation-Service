@@ -153,10 +153,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  color: var(--text-color);
+  color: #007f39;
   background: transparent;
-  border: 1.5px solid #2e7d32;
+  border: 1.5px solid #007f39;
   border-radius: var(--medium-radius);
 
   cursor: pointer;

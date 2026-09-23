@@ -418,6 +418,24 @@
 }
 
 .contact-map-box {
+    width: 100%;
+    height: 350px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--card-bg);
+}
+
+.contact-map-box iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+
+/* .contact-map-box {
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -442,7 +460,7 @@
     color: var(--heading-color);
     font-family: "Merriweather", serif;
     font-size: 21px;
-}
+} */
 
 .map-btn {
     display: inline-flex;
