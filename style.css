@@ -2578,3 +2578,21 @@ html[dir="rtl"] .main-navigation .nav-dropdown .dropdown-menu {
     margin-bottom: 15px;
   }
 }
+
+/* =========================================
+   1024px HOME DROPDOWN CLICK
+========================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .main-navigation .nav-dropdown.click-open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .main-navigation .nav-dropdown.click-open .nav-dropdown-toggle i {
+    transform: rotate(180deg);
+  }
+
+}

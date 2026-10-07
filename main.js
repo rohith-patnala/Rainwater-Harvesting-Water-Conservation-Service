@@ -1,4 +1,46 @@
 // =========================================
+// DESKTOP HOME DROPDOWN FUNCTION
+// =========================================
+
+function initializeDesktopHomeDropdown() {
+
+    const desktopHomeToggle =
+        document.querySelector(".nav-dropdown-toggle");
+
+    const desktopHomeDropdown =
+        document.querySelector(".nav-dropdown");
+
+    if (!desktopHomeToggle || !desktopHomeDropdown) {
+        return;
+    }
+
+    desktopHomeToggle.addEventListener("click", function (event) {
+
+        if (window.innerWidth < 769 || window.innerWidth > 1024) {
+            return;
+        }
+
+        event.preventDefault();
+
+        const isOpen =
+            desktopHomeDropdown.classList.contains("click-open");
+
+        desktopHomeDropdown.classList.toggle(
+            "click-open",
+            !isOpen
+        );
+
+        desktopHomeToggle.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+    });
+
+}
+
+
+// =========================================
 // MOBILE HOME DROPDOWN FUNCTION
 // =========================================
 
@@ -204,6 +246,8 @@ document.addEventListener(
                 setActiveNavigation();
 
                 initializeMobileHomeDropdown();
+
+                initializeDesktopHomeDropdown();
 
 
                 // ---------------------------------
