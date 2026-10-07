@@ -65,7 +65,7 @@
     isolation: isolate;
     overflow: hidden;
 
-    background-image: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=85");
+    background-image: url("https://i.pinimg.com/736x/d3/1f/31/d31f3157bd22ec4a193052ed823d08f4.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -77,7 +77,7 @@
     background: inherit;
     background-size: cover;
     background-position: center;
-    filter: blur(4px);
+    filter: blur(1px);
     transform: scale(1.05);
     z-index: -2;
 }

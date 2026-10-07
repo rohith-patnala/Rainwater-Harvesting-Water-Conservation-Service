@@ -138,7 +138,7 @@ a {
 ================================ */
 
 .premium-hero {
-  min-height: 700px !important;
+  min-height: 640px !important;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -782,10 +782,10 @@ html[dir="rtl"] .eco-card {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding-top: 180px;
   overflow: hidden;
 
-  background-image: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=90");
+  background-image: url("https://pw-cdn.watercorporation.com.au/-/media/WaterCorp/Image-Gallery/Media-releases/2022/October-2022/rainwater-tank-south-west-website-resize.jpg?hash=B77A3AD8D082C2D7CB7786C06AE176B0&rev=bdcaeee0f48f439292ea782a1dd95ff1");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
