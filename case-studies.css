@@ -18,7 +18,7 @@
 
 .case-hero-section {
     position: relative;
-    min-height: 640px;
+    max-height: 640px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,11 +61,12 @@
 }
 
 .case-hero-content {
-    width: min(900px, 90%);
+    width: min(780px, 90%);
     margin: 0 auto;
     padding: 100px 20px;
     color: #ffffff;
     text-align: center;
+    padding-top: 180px;
 }
 
 .case-hero-content .section-tag {

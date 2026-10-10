@@ -57,7 +57,7 @@
 
 .pricing-hero-section {
     position: relative;
-    min-height: 700px;
+    min-height: 640px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +97,7 @@
     width: min(900px, 90%);
     padding: 100px 20px;
     color: #ffffff;
+    padding-top: 180px;
 }
 
 .pricing-hero-content .section-tag {

@@ -20,7 +20,7 @@
 
 .contact-hero-section {
     position: relative;
-    min-height: 560px;
+    max-height: 640px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,7 @@
     width: min(900px, 90%);
     padding: 100px 20px;
     color: #ffffff;
+    padding-top: 180px;
 }
 
 .contact-hero-content .section-tag {
