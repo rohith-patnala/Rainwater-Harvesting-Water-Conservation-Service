@@ -351,6 +351,7 @@
 }
 
 .popular-badge {
+    margin-top: 25px;
     position: absolute;
     top: -14px;
     left: 50%;
