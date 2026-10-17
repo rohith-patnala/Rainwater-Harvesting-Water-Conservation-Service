@@ -23,7 +23,235 @@
 </head>
 
 <body>
+<header class="site-header" id="siteHeader">
 
+    <div class="site-container header-container">
+
+        <!-- Logo -->
+        <a
+            href="index.html"
+            class="brand-logo"
+            aria-label="AquaHarvest Home"
+        >
+            <img
+                src="./aquaharvest-logo.png"
+                alt="AquaHarvest logo"
+                class="brand-logo-image"
+                width="48"
+                height="48"
+                loading="eager"
+                decoding="async"
+            >
+            <span class="brand-logo-text" aria-label="AquaHarvest">
+                <span class="aqua-text">Aqua</span><span class="harvest-text">Harvest</span>
+            </span>
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav
+            class="main-navigation"
+            aria-label="Main Navigation"
+        >
+
+            <!-- Home Dropdown -->
+            <div class="nav-dropdown">
+
+                <a
+                    href="index.html"
+                    class="nav-link nav-dropdown-toggle"
+                >
+                    <span>Home</span>
+                    <i data-lucide="chevron-down"></i>
+                </a>
+
+
+                <div class="dropdown-menu">
+
+                    <a
+                        href="index.html"
+                        class="dropdown-link"
+                    >
+                        Home 1
+                    </a>
+
+                    <a
+                        href="home-2.html"
+                        class="dropdown-link"
+                    >
+                        Home 2
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="services.html" class="nav-link">
+                Services
+            </a>
+
+            <a href="case-studies.html" class="nav-link">
+                Case Studies
+            </a>
+
+            <a href="pricing.html" class="nav-link">
+                Pricing
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <button
+                type="button"
+                class="header-icon-button"
+                id="themeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle dark mode"
+            >
+                <i data-lucide="moon"></i>
+            </button>
+
+
+            <button
+                type="button"
+                class="header-icon-button rtl-button"
+                id="directionToggle"
+                aria-label="Toggle RTL and LTR"
+                title="Toggle RTL/LTR"
+            >
+                <span id="directionLabel" aria-hidden="true">RTL</span>
+            </button>
+
+
+            <a
+                href="book-now.html"
+                class="header-cta"
+            >
+                <i data-lucide="calendar-check"></i>
+                <span>Book Now</span>
+            </a>
+
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileNavigation"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+    <nav
+        class="mobile-navigation"
+        id="mobileNavigation"
+        aria-label="Mobile Navigation"
+    >
+
+        <!-- Mobile Home Dropdown -->
+        <div class="mobile-nav-dropdown">
+
+            <button
+                type="button"
+                class="mobile-nav-link mobile-home-toggle"
+                id="mobileHomeToggle"
+                aria-expanded="false"
+            >
+                <span>Home</span>
+                <i data-lucide="chevron-down"></i>
+            </button>
+
+
+            <div
+                class="mobile-dropdown-menu"
+                id="mobileHomeMenu"
+            >
+
+                <a
+                    href="index.html"
+                    class="mobile-dropdown-link"
+                >
+                    Home 1
+                </a>
+
+                <a
+                    href="home-2.html"
+                    class="mobile-dropdown-link"
+                >
+                    Home 2
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="about.html"
+            class="mobile-nav-link"
+        >
+            About
+        </a>
+
+        <a
+            href="services.html"
+            class="mobile-nav-link"
+        >
+            Services
+        </a>
+
+        <a
+            href="case-studies.html"
+            class="mobile-nav-link"
+        >
+            Case Studies
+        </a>
+
+        <a
+            href="pricing.html"
+            class="mobile-nav-link"
+        >
+            Pricing
+        </a>
+
+        <a
+            href="contact.html"
+            class="mobile-nav-link"
+        >
+            Contact
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="mobile-cta"
+        >
+            <i data-lucide="calendar-check"></i>
+            Book Now
+        </a>
+
+    </nav>
+
+</header>
     <!-- Header -->
     <div id="header-container"></div>
 
@@ -598,7 +826,167 @@
         </section>
 
     </main>
+<footer class="site-footer">
 
+  <div class="footer-main">
+    <div class="site-container footer-grid">
+
+      <!-- Brand Section -->
+      <div class="footer-column footer-brand-column">
+
+        <a href="index.html" class="footer-logo" aria-label="AquaHarvest Home">
+          <img
+            src="./aquaharvest-logo.png"
+            alt="AquaHarvest logo"
+            class="footer-logo-image"
+            width="52"
+            height="52"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="footer-logo-text" aria-label="AquaHarvest">
+            <strong><span class="aqua-text">Aqua</span><span class="harvest-text">Harvest</span></strong>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Helping homes, businesses, and communities conserve water through
+          sustainable rainwater harvesting and water management solutions.
+        </p>
+
+        <div class="footer-social-links">
+          <a href="#" aria-label="WhatsApp" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram" title="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook" title="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" aria-label="Twitter" title="Twitter">
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3 class="footer-title">Quick Links</h3>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="pricing.html">Pricing Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h3 class="footer-title">Our Services</h3>
+
+        <ul class="footer-links">
+          <li>
+            <a href="services.html">Rooftop Rainwater Harvesting</a>
+          </li>
+
+          <li>
+            <a href="services.html">Recharge Pit Installation</a>
+          </li>
+
+          <li>
+            <a href="services.html">Water Audits</a>
+          </li>
+
+          <li>
+            <a href="services.html">Rainwater Collection Solutions</a>
+          </li>
+
+          <li>
+            <a href="services.html">Water Conservation Consultation</a>
+          </li>
+
+          <li>
+            <a href="services.html">Site Assessment</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column">
+        <h3 class="footer-title">Contact Us</h3>
+
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-contact-icon">
+              <i data-lucide="map-pin"></i>
+            </span>
+
+            <span>
+              Your City, Andhra Pradesh, India
+            </span>
+          </li>
+
+          <li>
+            <span class="footer-contact-icon">
+              <i data-lucide="phone"></i>
+            </span>
+
+            <a href="tel:+919999999999">
+              +91 99999 99999
+            </a>
+          </li>
+
+          <li>
+            <span class="footer-contact-icon">
+              <i data-lucide="mail"></i>
+            </span>
+
+            <a href="mailto:info@rainwater.com">
+              info@rainwater.com
+            </a>
+          </li>
+
+          <li>
+            <span class="footer-contact-icon">
+              <i data-lucide="clock"></i>
+            </span>
+
+            <span>
+              Monday – Saturday<br>
+              9:00 AM – 6:00 PM
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="site-container footer-bottom-container">
+
+      <p>
+        © 2026 AquaHarvest. All Rights Reserved.
+      </p>
+
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
 
     <!-- Footer -->
     <div id="footer-container"></div>
